@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/NimbusACAD_DB/NimbusACAD_DB.jfm

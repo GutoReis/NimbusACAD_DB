@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Negocio_Base_Endereco]
+(
+	[CEP]			NVARCHAR(9)		NOT NULL,
+	[Logradouro]	NVARCHAR(80)	NOT NULL,
+	[Bairro]		NVARCHAR(30)	NOT NULL,
+	[Cidade]		NVARCHAR(30)	NOT NULL,
+	[Estado]		NVARCHAR(2)		NOT NULL,
+	[Pais]			NVARCHAR(30)	NOT NULL,
+	PRIMARY KEY CLUSTERED ([CEP] ASC)
+)
