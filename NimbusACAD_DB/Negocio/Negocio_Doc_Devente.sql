@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[Negocio_Doc_Devente]
 (
+	[Doc_Devente_ID]	INT IDENTITY(1,1),
 	[Documento_ID]		INT		NOT NULL,
 	[Matricula_ID]		INT		NOT NULL,
 	PRIMARY KEY CLUSTERED([Documento_ID],[Matricula_ID] ASC),

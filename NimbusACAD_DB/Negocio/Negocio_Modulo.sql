@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Negocio_Modulo]
 (
 	[Modulo_ID]		INT IDENTITY(1,1),
+	[Modulo_Nome]	VARCHAR(10)			NULL,
 	[Curso_ID]		INT					NOT NULL,
 	[Max_Alunos]	INT					NULL,
 	[Tot_Inscritos]	INT					NULL,

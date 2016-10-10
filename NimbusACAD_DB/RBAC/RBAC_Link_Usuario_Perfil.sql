@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[RBAC_Link_Usuario_Perfil]
 (
+	[Link_ID]		INT	IDENTITY(1,1),
 	[Usuario_ID]	INT		NOT NULL,
 	[Perfil_ID]		INT		NOT NULL,
 	PRIMARY KEY CLUSTERED ([Usuario_ID], [Perfil_ID] ASC),

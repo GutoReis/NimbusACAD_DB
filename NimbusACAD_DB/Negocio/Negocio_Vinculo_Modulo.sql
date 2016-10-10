@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[Negocio_Vinculo_Modulo]
 (
+	[Vinculo_ID]		INT IDENTITY(1,1),
 	[Modulo_ID]			INT					NOT NULL,
 	[Matricula_ID]		INT					NOT NULL,
 	[Status_Vinculo]	VARCHAR(10)			NULL,
