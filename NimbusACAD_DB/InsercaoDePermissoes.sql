@@ -1,0 +1,32 @@
+﻿DELETE FROM RBAC_Link_Perfil_Permissao WHERE RBAC_Link_Perfil_Permissao.Link_ID = 1;
+DELETE FROM RBAC_Permissao WHERE RBAC_Permissao.Permissao_ID = 1;
+
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Curso-Index'); --2
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Horario-Index'); --3
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Matricula-Buscar'); --4
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Matricula-Criar'); --5
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Diario-Index'); --6
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Diario-ListarPresenca'); --7
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Diario-VerNotasDisciplinas'); --8
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Cargo-Index'); --9
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Documento-Index'); --10
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Funcionario-Index'); --11
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('Funcionario-Criar'); --12
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('RBACPerfil-Index'); --13
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('RBACPermissao-Index'); --14
+INSERT INTO RBAC_Permissao (Permissao_Nome) VALUES ('RBACUsuario-Index'); --15
+
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 2);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 3);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 4);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 5);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 6);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 7);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 8);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 9);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 10);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 11);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 12);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 13);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 14);
+INSERT INTO RBAC_Link_Perfil_Permissao (Perfil_ID, Permissao_ID) VALUES(1, 15);
