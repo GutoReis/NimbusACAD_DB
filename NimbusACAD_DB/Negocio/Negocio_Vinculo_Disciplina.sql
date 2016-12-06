@@ -8,7 +8,7 @@
 	[Media_Final]		FLOAT				NULL,
 	[Frequencia]		INT					NULL,
 	[Num_Chamada]		INT					NULL,
-	PRIMARY KEY CLUSTERED ([Disciplina_ID], [Matricula_ID] ASC),
+	CONSTRAINT [PK_dbo.Negocio_Vinculo_Disciplina_Vinculo_ID] PRIMARY KEY CLUSTERED ([Vinculo_ID] ASC),
 
 	CONSTRAINT [FK_dbo.Negocio_Vinculo_Disciplina_dbo.Negocio_Disciplina_Disciplina_ID] FOREIGN KEY ([Disciplina_ID])
 		REFERENCES [dbo].[Negocio_Disciplina] ([Disciplina_ID]),

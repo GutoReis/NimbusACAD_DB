@@ -4,7 +4,7 @@
 	[Modulo_ID]			INT					NOT NULL,
 	[Matricula_ID]		INT					NOT NULL,
 	[Status_Vinculo]	VARCHAR(10)			NULL,
-	PRIMARY KEY CLUSTERED ([Modulo_ID],[Matricula_ID] ASC),
+	CONSTRAINT [PK_dbo.Negocio_Vinculo_Modulo_Vinculo_ID] PRIMARY KEY CLUSTERED ([Vinculo_ID] ASC),
 
 	CONSTRAINT [FK_dbo.Negocio_Vinculo_Modulo_dbo.Negocio_Modulo_Modulo_ID] FOREIGN KEY ([Modulo_ID])
 		REFERENCES [dbo].[Negocio_Modulo] ([Modulo_ID]),

@@ -3,7 +3,7 @@
 	[Doc_Devente_ID]	INT IDENTITY(1,1),
 	[Documento_ID]		INT		NOT NULL,
 	[Matricula_ID]		INT		NOT NULL,
-	PRIMARY KEY CLUSTERED([Documento_ID],[Matricula_ID] ASC),
+	CONSTRAINT [PK_dbo.Negocio_Doc_Devente_Doc_Devente_ID] PRIMARY KEY CLUSTERED ([Doc_Devente_ID] ASC),
 
 	CONSTRAINT [FK_dbo.Negocio_Doc_Devente_dbo.Negocio_Documento_Documento_ID] FOREIGN KEY ([Documento_ID])
 		REFERENCES [dbo].[Negocio_Documento] ([Documento_ID]),

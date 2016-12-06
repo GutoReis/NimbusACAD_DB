@@ -9,7 +9,7 @@
 	[Dt_Nascimento]		DATE				NULL,
 	[Tel_Principal]		NVARCHAR(15)		NULL,
 	[Tel_Opcional]		NVARCHAR(15)		NULL,
-	[Email]				NVARCHAR(50)		NULL,
+	[Email]				NVARCHAR(50)		NULL	UNIQUE,
 	[Email_Confirmado]	BIT					NULL,
 	[Tot_Notif_NL]		INT					NULL,
 	PRIMARY KEY CLUSTERED ([Pessoa_ID] ASC)
